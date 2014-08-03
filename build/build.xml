@@ -3,17 +3,17 @@
     <target name="build" depends="clean, prepare, phpunit" />
 
     <target name="clean">
-        <echo msg="Cleaning up build directory" />
+        <echo message="Cleaning up build directory" />
         <delete dir="logs" />
     </target>
 
     <target name="prepare">
-        <echo msg="Preparing build directory" />
+        <echo message="Preparing build directory" />
         <mkdir dir="logs/phpunit" />
     </target>
 
     <target name="phpunit">
-        <echo msg="Running unit tests" />
+        <echo message="Running unit tests" />
         <phpunit haltonfailure="true" printsummary="true" >
             <formatter todir="logs/phpunit" type="xml" outfile="phpunit.xml" />
             <batchtest>
