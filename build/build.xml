@@ -1,4 +1,4 @@
-<project name="Best Global Brands" default="build" phingVersion="2.8.2">
+<project name="Best Global Brands" default="build">
 
     <target name="build" depends="clean, prepare, phpunit" />
 
