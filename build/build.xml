@@ -1,0 +1,32 @@
+<project name="Best Global Brands" default="build" phingVersion="2.8.2">
+
+    <target name="build" depends="clean, prepare, phpunit" />
+
+    <target name="clean">
+        <echo msg="Cleaning up build directory" />
+        <delete dir="logs" />
+    </target>
+
+    <target name="prepare">
+        <echo msg="Preparing build directory" />
+        <mkdir dir="logs/phpunit" />
+    </target>
+
+    <target name="phpunit">
+        <echo msg="Running unit tests" />
+        <phpunit haltonfailure="true" printsummary="true" >
+            <formatter todir="logs/phpunit" type="xml" outfile="phpunit.xml" />
+            <batchtest>
+                <fileset dir="../tests">
+                    <include name="*Test.php" />
+                </fileset>
+            </batchtest>
+        </phpunit>
+
+        <phpunitreport infile="logs/phpunit/phpunit.xml"
+                       styledir="../vendor/phing/phing/etc"
+                       format="noframes"
+                       todir="logs/phpunit" />
+    </target>
+
+</project>
