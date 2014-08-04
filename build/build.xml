@@ -34,7 +34,7 @@
 
     <target name="phpmd">
         <echo message="Running mess detector" />
-        <phpmd allowedFileExtensions="php5">
+        <phpmd>
             <fileset dir="../">
                 <include name="*.php5" />
             </fileset>
