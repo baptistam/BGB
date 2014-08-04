@@ -1,6 +1,6 @@
 <project name="Best Global Brands" default="build">
 
-    <target name="build" depends="clean, prepare, phpunit" />
+    <target name="build" depends="clean, prepare, phpunit, phpmd" />
 
     <target name="clean">
         <echo message="Cleaning up build directory" />
@@ -10,6 +10,7 @@
     <target name="prepare">
         <echo message="Preparing build directory" />
         <mkdir dir="logs/phpunit" />
+        <mkdir dir="logs/phpmd"/>
     </target>
 
     <target name="phpunit">
@@ -27,6 +28,16 @@
                        styledir="../vendor/phing/phing/etc"
                        format="noframes"
                        todir="logs/phpunit" />
+    </target>
+
+    <target name="phpmd">
+        <echo message="Running mess detector" />
+        <phpmd allowedFileExtensions="php5" rulesets="codesize,controversial,design,naming,unusedcode">
+            <fileset dir="../">
+                <include name="*.php5" />
+            </fileset>
+            <formatter type="xml" outfile="logs/phpmd/pmd.xml"/>
+        </phpmd>
     </target>
 
 </project>

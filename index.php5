@@ -15,7 +15,7 @@
 
         <?php
             $person = new Person();
-            $person -> firstName = "Manuel Baptista";
+            $person -> firsthhName = "Manuel Baptista";
         ?>
     </body>
 </html>

@@ -1,10 +1,7 @@
 <?php
 
-/**
- * Class Person
- */
-class Person
+class person
 {
-    public $firstName;
+    public $FirstName;
 }
 
