@@ -11,7 +11,6 @@
     ],
     "require": {
         "phpunit/phpunit": "4.1.4",
-        "phing/phing": "2.8.2",
-        "phpmd/phpmd": "2.0.0"
+        "phing/phing": "2.8.2"
     }
 }
