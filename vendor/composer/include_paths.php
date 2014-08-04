@@ -15,4 +15,6 @@ return array(
     $vendorDir . '/phpunit/phpunit',
     $vendorDir . '/symfony/yaml',
     $vendorDir . '/phing/phing/classes',
+    $vendorDir . '/pdepend/pdepend/src/main/php',
+    $vendorDir . '/phpmd/phpmd/src/main/php',
 );
