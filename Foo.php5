@@ -2,6 +2,6 @@
 
 class person
 {
-    public $FirstName;
+    public $firstName;
 }
 
