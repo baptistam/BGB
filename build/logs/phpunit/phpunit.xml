@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="AllTests" tests="2" assertions="2" failures="0" errors="0" time="0.004000">
-    <testsuite name="BarTest" file="D:\Projects\BestGlobalBrands\tests\BarTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.003000">
-      <testcase name="testBar" class="BarTest" file="D:\Projects\BestGlobalBrands\tests\BarTest.php" line="10" assertions="1" time="0.003000"/>
+  <testsuite name="AllTests" tests="2" assertions="2" failures="0" errors="0" time="0.006001">
+    <testsuite name="BarTest" file="D:\Projects\BestGlobalBrands\tests\BarTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.004001">
+      <testcase name="testBar" class="BarTest" file="D:\Projects\BestGlobalBrands\tests\BarTest.php" line="10" assertions="1" time="0.004001"/>
     </testsuite>
-    <testsuite name="FooTest" file="D:\Projects\BestGlobalBrands\tests\FooTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001000">
-      <testcase name="testFoo" class="FooTest" file="D:\Projects\BestGlobalBrands\tests\FooTest.php" line="10" assertions="1" time="0.001000"/>
+    <testsuite name="FooTest" file="D:\Projects\BestGlobalBrands\tests\FooTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.002000">
+      <testcase name="testFoo" class="FooTest" file="D:\Projects\BestGlobalBrands\tests\FooTest.php" line="10" assertions="1" time="0.002000"/>
     </testsuite>
   </testsuite>
 </testsuites>

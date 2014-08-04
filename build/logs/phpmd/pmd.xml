@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pmd version="1.5.0" timestamp="2014-08-04T18:37:46+02:00">
-  <file name="D:\Sample\Foo.php5">
-    <violation beginline="6"
-               endline="9"
-               rule="CamelCaseClassName"
-               ruleset="Controversial Rules"
-               package="+global"
-               externalInfoUrl="#"
-               class="person"
-               priority="1">
+<pmd version="1.5.0" timestamp="2014-08-04T20:10:57+02:00">
+  <file name="D:\Projects\BestGlobalBrands\Foo.php5">
+    <violation beginline="3" endline="6" rule="CamelCaseClassName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="person" priority="1">
       The class person is not named in CamelCase.
     </violation>
   </file>
 </pmd>
-
-
