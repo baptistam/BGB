@@ -34,7 +34,7 @@
 
     <target name="phpmd">
         <phpmd rulesetfiles="unusedcode" failOnRuleViolation="on">
-            <formatter type="xml" toFile="/logs/phpmd/phpmd.xml" />
+            <formatter type="text" toFile="logs/phpmd/phpmd.xml" />
             <fileset dir="../">
                 <include name="*.php5" />
             </fileset>
