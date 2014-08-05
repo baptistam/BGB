@@ -33,7 +33,7 @@
     <taskdef name="phpmd" classname="org.phpmd.ant.PHPMDTask"/>
 
     <target name="phpmd">
-        <phpmd rulesetfiles="unusedcode" failOnRuleViolation="on">
+        <phpmd rulesetfiles="unusedcode" failOnRuleViolation="off">
             <formatter type="text" toFile="/logs/phpmd/phpmd.xml" />
             <fileset dir="../">
                 <include name="*.php5" />
