@@ -6,7 +6,7 @@ class person
 
     public function count($count)
     {
-
+        echo "$count";
     }
 }
 
