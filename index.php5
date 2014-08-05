@@ -16,7 +16,7 @@
         <?php
             $person = new Person();
             $person->firstName = "Manuel Baptista";
-            echo "Hello  $person->count(100)";
+            echo "Hello  $person->firstName";
         ?>
     </body>
 </html>
