@@ -30,11 +30,11 @@
                        todir="logs/phpunit" />
     </target>
 
-    <taskdef name="phpmd-taskdef" classname="org.phpmd.ant.PHPMDTask"/>
+    <taskdef name="phpmd" classname="org.phpmd.ant.PHPMDTask"/>
 
     <target name="phpmd">
         <phpmd rulesetfiles="unusedcode" failOnRuleViolation="on">
-            <formatter type="xml" toFile="logs/phpmd/phpmd.xml" />
+            <formatter type="text" toFile="/logs/phpmd/phpmd.xml" />
             <fileset dir="../">
                 <include name="*.php5" />
             </fileset>
