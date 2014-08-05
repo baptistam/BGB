@@ -1,6 +1,6 @@
 <project name="Best Global Brands" default="build">
 
-    <target name="build" depends="clean, prepare, phpunit, phpmd" />
+    <target name="build" depends="clean, prepare, phpunit" />
 
     <target name="clean">
         <echo message="Cleaning up build directory" />
@@ -10,7 +10,6 @@
     <target name="prepare">
         <echo message="Preparing build directory" />
         <mkdir dir="logs/phpunit" />
-        <mkdir dir="logs/phpmd"/>
     </target>
 
     <target name="phpunit">
@@ -30,14 +29,4 @@
                        todir="logs/phpunit" />
     </target>
 
-    <taskdef name="phpmd" classname="org.phpmd.ant.PHPMDTask"/>
-
-    <target name="phpmd">
-        <phpmd rulesetfiles="unusedcode" failOnRuleViolation="on">
-            <formatter type="text" toFile="logs/phpmd/phpmd.txt" />
-            <fileset dir="../">
-                <include name="*.php5" />
-            </fileset>
-        </phpmd>
-    </target>
 </project>
